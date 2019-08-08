@@ -1,6 +1,6 @@
 # picosanity-graphql
 
-[![npm version](https://img.shields.io/npm/v/picosanity-graphql.svg?style=flat-square)](http://browsenpm.org/package/picosanity-graphql)[![Build Status](https://img.shields.io/travis/rexxars/picosanity-graphql/master.svg?style=flat-square)](https://travis-ci.org/rexxars/picosanity-graphql)
+[![npm version](https://img.shields.io/npm/v/picosanity-graphql?style=flat-square)](https://www.npmjs.com/package/picosanity-graphql)[![Build Status](https://img.shields.io/travis/rexxars/picosanity-graphql/master.svg?style=flat-square)](https://travis-ci.org/rexxars/picosanity-graphql)
 
 Tiny GraphQL request library for Sanity for Node.js and modern browsers.
 
@@ -29,18 +29,20 @@ const PicoGraphQL = require('picosanity-graphql')
 
 const client = new PicoGraphQL({
   projectId: 'myProjectId',
-  dataset: 'myDataset',
+  dataset: 'myDataset'
 })
 
 client
-  .fetch(`
+  .fetch(
+    `
     query($limit: Int!) {
       allBlogPost(limit: $limit) {
         _id
         title
       }
-    }`
-  , {limit: 5})
+    }`,
+    {limit: 5}
+  )
   .then(res => console.log(res.data))
   .catch(err => console.error('Oh noes: %s', err.message))
 ```
