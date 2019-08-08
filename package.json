@@ -1,6 +1,6 @@
 {
   "name": "picosanity-graphql",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tiny GraphQL request library for Sanity",
   "main": "lib/index.js",
   "browser": "lib/browser.js",
