@@ -6,7 +6,7 @@ Tiny GraphQL request library for Sanity for Node.js and modern browsers.
 
 ## Targets
 
-- Node.js >= 6
+- Node.js >= 8
 - Modern browsers (Edge >= 14, Chrome, Safari, Firefox etc)
 
 ## Features
