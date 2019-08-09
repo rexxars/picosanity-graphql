@@ -7,10 +7,11 @@ const cdnHost = 'apicdn'
 function fetch(fetcher, config, query, variables) {
   const {useCdn, domain, withCredentials, token, projectId, dataset} = config
 
+  const hasCredentials = token || withCredentials
   const encodedQueryString = getQs(query, variables)
   const useGet = encodedQueryString.length < MAX_QUERY_SIZE
   const hostDomain = domain || defaultDomain
-  const api = useGet && useCdn ? cdnHost : apiHost
+  const api = useGet && useCdn && !hasCredentials ? cdnHost : apiHost
   const queryString = useGet ? encodedQueryString : ''
   const url = `https://${projectId}.${api}.${hostDomain}/v1/graphql/${dataset}/default${queryString}`
   const reqOpts = {
