@@ -36,17 +36,17 @@
     "node-fetch": "^2.1.2"
   },
   "devDependencies": {
-    "@babel/cli": "^7.5.5",
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "eslint": "^6.1.0",
-    "eslint-config-prettier": "^6.0.0",
-    "eslint-config-sanity": "^0.141.5",
-    "graphql-query-compress": "^1.2.2",
-    "jest": "^24.8.0",
-    "prettier": "^1.13.5",
-    "rimraf": "^2.6.2",
-    "webpack": "^4.12.0",
-    "webpack-command": "^0.4.2"
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-config-sanity": "^1.149.0",
+    "graphql-query-compress": "^1.2.3",
+    "jest": "^25.3.0",
+    "prettier": "^2.0.4",
+    "rimraf": "^3.0.2",
+    "webpack": "^4.42.1",
+    "webpack-command": "^0.5.0"
   }
 }
